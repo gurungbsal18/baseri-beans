@@ -9,7 +9,7 @@ import { FaCartPlus } from "react-icons/fa6";
 const BestSellerSection = () => {
   return (
     <div className="best-seller-container">
-      <div className="container py-24">
+      <div className="container pt-24">
         <h3 className="title">Best Seller</h3>
         <p>
           Customer favorites, loved for their rich flavor and farm-fresh quality
@@ -19,7 +19,11 @@ const BestSellerSection = () => {
         <div className="flex flex-col md:grid grid-cols-4 gap-8 mt-16">
           {bestSellerProductData.map((list) => {
             return (
-              <div className="col-span-1 coffee-product" title={list.title}>
+              <div
+                className="col-span-1 coffee-product"
+                title={list.title}
+                key={list.id}
+              >
                 <span className={`product-tag ${list.tagColor}`}>
                   {list.tag}
                 </span>

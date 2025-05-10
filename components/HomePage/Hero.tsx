@@ -19,7 +19,9 @@ const Hero = () => {
             alt="coffee-background"
             height={700}
             width={700}
-            className="coffee-tree-img"
+            priority
+            style={{ width: "auto" }}
+            className="coffee-tree-img aspect-3/2"
           />
           <div className="flex flex-col-reverse md:grid grid-cols-12 items-center gap-32">
             <div className="col-span-7 flex flex-col items-center md:items-start text-center md:text-left gap-4 text-white">
