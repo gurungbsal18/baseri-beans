@@ -22,11 +22,9 @@ const Hero = () => {
             className="coffee-tree-img"
           />
           <div className="flex flex-col-reverse md:grid grid-cols-12 items-center gap-32">
-            <div className="col-span-6 flex flex-col items-center md:items-start text-center md:text-left gap-4 text-white">
-              <span>
-                <h4 className="text-xl md:text-2xl">{subtitle}</h4>
-                <h1 className="text-4xl md:text-6xl font-bold">{title}</h1>
-              </span>
+            <div className="col-span-7 flex flex-col items-center md:items-start text-center md:text-left gap-4 text-white">
+              <h4 className="text-xl md:text-2xl">{subtitle}</h4>
+              <h1 className="text-4xl md:text-6xl font-bold">{title}</h1>
               <p>{heroContent}</p>
               <div className="flex justify-start">
                 <Button radius="md" color="secondary">
