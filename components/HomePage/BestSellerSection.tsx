@@ -1,7 +1,7 @@
-import React from "react";
 import { bestSellerProductData } from "./data/BestSellerProduct";
 import Image from "next/image";
 import { Button } from "@heroui/button";
+
 import { FaCartPlus } from "react-icons/fa6";
 
 const BestSellerSection = () => {

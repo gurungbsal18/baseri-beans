@@ -1,7 +1,7 @@
-import React from "react";
 import MainMenu from "../MainMenu";
+
 import Image from "next/image";
-import { Button, ButtonGroup } from "@heroui/button";
+import { Button } from "@heroui/button";
 import { HeroSectionCardData } from "./data/HeroSectionCardData";
 
 const Hero = () => {

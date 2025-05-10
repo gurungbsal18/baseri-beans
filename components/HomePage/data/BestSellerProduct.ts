@@ -8,7 +8,7 @@ type bestSellerProductType = {
   tagColor?: string;
 };
 
-export const bestSellerProductData = [
+export const bestSellerProductData: bestSellerProductType[] = [
   {
     id: 1,
     image: "/assests/images/coffee-product.webp",
