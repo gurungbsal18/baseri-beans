@@ -16,23 +16,15 @@ import { FlatCompat } from "@eslint/eslintrc";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({
-  //   baseDirectory: __dirname,
-  baseDirectory: import.meta.dirname,
+  baseDirectory: __dirname,
   recommendedConfig: js.configs.recommended,
   allConfig: js.configs.all,
 });
 
-export const eslintConfig = [
-  ...compat.config({
-    extends: ["next"],
-    rules: {
-      "react/no-unescaped-entities": "off",
-      "@next/next/no-page-custom-font": "off",
-    },
-  }),
-];
-
 export default defineConfig([
+  ...compat.config({
+    extends: ["next", "prettier"],
+  }),
   globalIgnores([
     ".now/*",
     "**/*.css",
