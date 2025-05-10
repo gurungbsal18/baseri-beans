@@ -1,3 +1,5 @@
+import React from "react";
+
 import MainMenu from "@/components/MainMenu";
 
 const OurStoryPage = () => {
