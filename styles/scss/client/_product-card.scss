@@ -1,0 +1,79 @@
+.coffee-product {
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  &:hover {
+    img {
+      transform: scale(1.1);
+      transition: ease-in-out 0.5s;
+    }
+    box-shadow:
+      rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: 0.7s ease-in-out;
+  }
+  .product-tag {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 32px;
+    z-index: 1;
+  }
+  .product-image {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .product-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    .product-title {
+      font-size: 24px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+    .product-price {
+      font-weight: 700;
+    }
+    .discount-price {
+      color: red;
+      text-decoration: line-through;
+    }
+    .product-card-button {
+      display: flex;
+      gap: 8px;
+      .cart-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        color: var(--white);
+        background-color: var(--secondary);
+        &:hover {
+          background-color: var(--primary);
+          transition: ease-in-out 0.5s;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
